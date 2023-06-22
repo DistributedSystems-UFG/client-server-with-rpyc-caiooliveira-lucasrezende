@@ -7,3 +7,5 @@ class Client:
   conn.root.exposed_append(5)       # Call an exposed operation,
   conn.root.exposed_append(6)       # and append two elements
   print (conn.root.exposed_value())   # Print the result
+  conn.root.delete_all_value()    #Call delete values
+  print(conn.root.exposed_value())  #Print the result
