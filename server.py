@@ -12,6 +12,10 @@ class DBList(rpyc.Service):
   def exposed_value(self):
     return self.value
 
+  def delete_all_value(self):
+    self.value = null
+    return self.value
+
 if __name__ == "__main__":
   server = ThreadedServer(DBList(), port = PORT)
   server.start()
