@@ -27,16 +27,16 @@ if _name_ == "_main_":
     client.append(5)
     client.append(3)
     client.append(8)
-    print("Original value:", client.get_value())
+    print("Valor:", client.get_value())
 
-    print("Search 5:", client.search(5))
-    print("Search 7:", client.search(7))
+    print("Pesquisa 5:", client.search(5))
+    print("Pesquisa 7:", client.search(7))
 
     client.remove(3)
-    print("After removal:", client.get_value())
+    print("Depois de remover:", client.get_value())
 
     client.insert(1, 4)
-    print("After insertion:", client.get_value())
+    print("Depois de Inserir:", client.get_value())
 
     client.sort()
-    print("After sorting:", client.get_value())
+    print("Depois de ordenar:", client.get_value())
